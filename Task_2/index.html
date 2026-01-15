@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rohit's personal tech blog on DSA, Web Development, AI and ML">
+    <meta name="keywords" content="Rohit, MCA, DSA, Web Development, AI, ML, Blog">
+    <meta name="author" content="Rohit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rohit's Tech Blog</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Rohit's Tech Blog</h1>
+        <p><span class="highlight">MCA Student</span> | University of Hyderabad</p>
+    </header>
+
+    <main class="container">
+
+
+        <section class="profile">
+            <div class="profile-image">
+                <img src="./img.jpeg" alt="Rohit Photo">
+            </div>
+
+            <div class="profile-text">
+                <h2>About Me</h2>
+                <p>
+                    I am <span class="highlight">Rohit</span>, an MCA student at the
+                    <span class="highlight">University of Hyderabad (UOH)</span>.
+                    I am good at <strong>Data Structures & Algorithms</strong>,
+                    <strong>Web Development</strong>, and currently learning
+                    <strong>Artificial Intelligence</strong> and
+                    <strong>Machine Learning</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- intro  blog Section -->
+        <section class="blog">
+            <h2>Latest Blog</h2>
+            <p>
+                This blog documents my learning journey in computer science,
+                focusing on problem solving, modern web technologies, and AI.
+                I regularly share insights, project updates, and technical notes.
+            </p>
+        </section>
+
+        <!-- Projects Sec -->
+        <section class="projects">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Project 1">
+                <h3>DSA Practice Tracker</h3>
+                <p>A web-based tool to track DSA practice and progress.</p>
+                <a href="https://github.com/" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://imgs.search.brave.com/n2Yt5Po-4iWJdHY2nBBa6YJc0S_VGXfvOwcWGs3elQo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2ODMxMjE3/MTA1NzItNzcyM2Jk/MmUyMzVkP2ZtPWpw/ZyZxPTYwJnc9MzAw/MCZpeGxpYj1yYi00/LjEuMCZpeGlkPU0z/d3hNakEzZkRCOE1I/eHpaV0Z5WTJoOE1Y/eDhZWEowYVdacFky/bGhiQ1V5TUdsdWRH/VnNiR2xuWlc1alpY/eGxibnd3Zkh3d2ZI/eDhNQT09"
+                    alt="Project 2">
+                <h3>AI Learning Dashboard</h3>
+                <p>A dashboard showcasing AI & ML learning milestones.</p>
+                <a href="https://github.com/" target="_blank">View Project</a>
+            </div>
+        </section>
+
+
+        <section class="comments">
+            <h2>Comments</h2>
+
+            <div id="disqus_thread"></div>
+
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = "rohit-tech-blog";
+                };
+                // Disqus is not wrking mam because its asking for url to apply for free account
+                (function () {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+
+            <noscript>
+                Please enable JavaScript to view the comments powered by Disqus.
+            </noscript>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Rohit's Tech Blog | Built with HTML & CSS</p>
+    </footer>
+
+</body>
+
+</html>
