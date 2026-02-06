@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="regForm" action="#">
+
+            <h2>Register</h2>
+
+
+            <div class="input-field">
+                <input type="text" id="name" required>
+                <label>Enter your name</label>
+                <span id="nameError"></span>
+            </div>
+
+
+            <div class="input-field">
+                <input type="text" id="email" required>
+                <label>Enter your email</label>
+                <span id="emailError"></span>
+            </div>
+
+            <div class="input-field">
+                <input type="password" id="password" required>
+                <label>Enter your password</label>
+                <span id="passwordStrength"></span>
+                <span id="passwordError"></span>
+            </div>
+
+            <div class="input-field">
+                <input type="date" id="dob" required>
+                <label>Date of Birth</label>
+                <span id="dobError"></span>
+            </div>
+
+
+            <div class="input-field">
+                <input type="text" id="phone" required>
+                <label>Phone Number</label>
+                <span id="phoneError"></span>
+            </div>
+
+
+            <div class="forget">
+                <label for="remember">
+                    <input type="checkbox" id="remember">
+                    <p>Remember me</p>
+                </label>
+            </div>
+
+            <button type="submit">Register</button>
+
+
+
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

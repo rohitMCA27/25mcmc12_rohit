@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form id="todoForm">
+
+            <h2>To-Do List</h2>
+
+            <div class="input-field">
+                <input type="text" id="taskInput" required>
+                <label>Enter task</label>
+            </div>
+
+            <div class="input-field">
+                <input type="date" id="dueDate" required>
+                <label>Due Date</label>
+            </div>
+
+            <button type="submit">Add Task</button>
+
+            <div class="forget">
+                <label>
+                    <input type="radio" name="filter" value="all" checked>
+                    <p>All</p>
+                </label>
+                <label>
+                    <input type="radio" name="filter" value="pending">
+                    <p>Pending</p>
+                </label>
+                <label>
+                    <input type="radio" name="filter" value="completed">
+                    <p>Completed</p>
+                </label>
+            </div>
+
+        </form>
+
+        <div class="register">
+            <ul id="taskList"></ul>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
